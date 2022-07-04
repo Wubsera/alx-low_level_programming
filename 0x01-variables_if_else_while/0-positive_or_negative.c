@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry point
+ * main - the main function
  *
- * Description: 'the program's description'
+ * Description: this is my first c program in vi
  *
- * Return: Always 0 (Success)
+ * Return: return true or false
  */
 int main(void)
 {
