@@ -3,10 +3,10 @@
 #include <time.h>
 
 /**
-*This is my first code in c language
+## This is my first code in c language
 *This program checks if the number is positive or negative
 */
-int main(void)
+int main(void) /*main */
 {
 	int n;
 
