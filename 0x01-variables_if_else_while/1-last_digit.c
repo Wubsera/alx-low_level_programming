@@ -8,7 +8,7 @@
  *
  * Return: return true or false
  */
-int main(void)
+int main (void)
 {
 	int n;
 	
