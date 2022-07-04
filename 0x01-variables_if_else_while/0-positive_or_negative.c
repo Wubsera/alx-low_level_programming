@@ -4,9 +4,10 @@
 
 /**
  * This is my first code in c language.
+ * 
  * This program checks if the number is positive or negative
 */
-int main(void) /*main */
+int main(void)
 {
 	int n;
 
