@@ -8,11 +8,13 @@
  *
 * This program checks if the number is positive or negative
 *
+* Main function - description
+*
+* Return description
 */
 int main(void)
 {
 	int n;
-	/*main function*/
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -23,5 +25,4 @@ int main(void)
 	else
 		printf("%d is negative\n", n);
 	return (0);
-	/*return*/
 }
