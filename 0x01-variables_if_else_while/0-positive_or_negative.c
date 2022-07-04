@@ -7,7 +7,7 @@
 *
 * This program checks if the number is positive or negative
 */
-int main(void) //main
+int main(void)
 {
 	int n;
 
