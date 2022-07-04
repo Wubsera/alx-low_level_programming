@@ -3,17 +3,17 @@
 #include <time.h>
 
 /**
-* This is my first code in c language.
-*
+ * my function - short description
+ * @my_arg - n
+ *
 * This program checks if the number is positive or negative
 */
-int main(void)/*main function*/
+int main(void)
 {
-	int n;/*declaratio*/
+	int n;
 
-	srand(time(0));/*statment*/
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/*function*/
 	if (n > 0)
 		printf("%d is positive\n", n);
 	else if (n == 0)
