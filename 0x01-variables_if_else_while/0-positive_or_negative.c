@@ -1,17 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
- * my function - short description
- * @my_arg - n
+ * main - Entry point
+ * 
+ * Description: 'the program's description'
  *
-* This program checks if the number is positive or negative
-*
-* Main function - description
-*
-* Return description
-*/
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
