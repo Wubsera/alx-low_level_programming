@@ -7,12 +7,13 @@
 *
 * This program checks if the number is positive or negative
 */
-int main(void)
+int main(void)/*main function*/
 {
-	int n;
+	int n;/*declaratio*/
 
-	srand(time(0));
+	srand(time(0));/*statment*/
 	n = rand() - RAND_MAX / 2;
+	/*function*/
 	if (n > 0)
 		printf("%d is positive\n", n);
 	else if (n == 0)
