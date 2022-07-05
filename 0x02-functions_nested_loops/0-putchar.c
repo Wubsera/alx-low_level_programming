@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * main - the main function
+ * main - check description
  *
- * Description: Write a program that prints _putchar, followed by a new line.
+ * Description: It prints the word Holberton, followed by a new line.
  *
- * Return: 0 for success
+ * Return: Always 0.
  * */
 int main(void)
 {
