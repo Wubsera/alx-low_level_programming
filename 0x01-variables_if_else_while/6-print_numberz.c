@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- * Main: the main function
+ * main - the main function
  *
- * Description: this function is print whole numbers
+ * Description: this is my first c program in vi
  *
  * Return: return true or false
  */
+
 int main(void)
 {
 	int num;
