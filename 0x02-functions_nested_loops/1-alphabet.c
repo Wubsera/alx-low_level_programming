@@ -3,7 +3,7 @@
 /**
  * main - check the code
  *
- * Dsecription: check the description
+ * print_alphabet: description
  *
  * Return: Always 0.
  */
