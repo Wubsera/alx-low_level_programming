@@ -1,10 +1,10 @@
 #include <unistd.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * main - check description
  *
- * Description: Write a program that prints _putchar, followed by new line..
+ * Description: Write a program that prints _putchar, followed by new line.
  *
  * Return: Always 0.
  * */
