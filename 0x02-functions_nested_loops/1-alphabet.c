@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet - description
  *
- * print_alphabet: description
- *
- * Return: Always 0.
+ * Return: no return
  */
+
 void print_alphabet(void)
 {
 	char ab;
