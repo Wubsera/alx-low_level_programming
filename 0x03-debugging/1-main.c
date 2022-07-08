@@ -2,6 +2,9 @@
 
 /**
  * main - causes an infinite loop
+ *
+ * Description: Describe the main funtion
+ *
  * Return: 0
  */
 
@@ -18,5 +21,8 @@ int main(void)
 	 * 	putchar(i);
 	 * }
 	 */
+
 	printf("Infinite loop avoided! \\o/\n");
+
+	return (0);
 }
