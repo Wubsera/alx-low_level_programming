@@ -11,7 +11,7 @@
 int _isupper(int c)
 {
 	char ch;
-	int i = 0;
+	int n = 0;
 
 	for (ch = 'A'; ch <= 'Z'; ch++)
 	{
