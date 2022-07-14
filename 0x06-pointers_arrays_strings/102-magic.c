@@ -1,5 +1,11 @@
-nclude <stdio.h>
-
+#include <stdio.h>
+/**
+ * main - this is the main fnction
+ *
+ * Description: description here
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
