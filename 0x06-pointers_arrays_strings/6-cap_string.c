@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  *cap_string - capitalizes all words of a string.
@@ -15,7 +15,6 @@ char *cap_string(char *s)
 
 	if (s[0] > 96 && s[0] < 123)
 		s[0] -= 32;
-
 
 	while (s[i] != '\0')
 	{
