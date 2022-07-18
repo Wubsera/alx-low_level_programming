@@ -1,21 +1,19 @@
-#include "main.h"
-#include <stdio.h>
-
+#include "holberton.h"
+#include <stddef.h>
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _strchr - Function that locates a character in a string
+ * @s: This is the input string
+ * @c: This is the character
+ * Return: Return to the character found, if not return a NULL
  */
-int main(void)
+char *_strchr(char *s, char c)
 {
-	char *s = "hello";
-	char *f;
-
-	f = _strchr(s, 'l');
-
-	if (f != NULL)
+	for (; ; s++)
 	{
-		printf("%s\n", f);
+		if (*s == c)
+			return (s);
+		if (*s == 0)
+			return (NULL);
 	}
-	return (0);
+	return (NULL);
 }
