@@ -1,85 +1,68 @@
 #include <stdlib.h>
-#include "main.h"
+#include <stdio.h>
 /**
- * _puts - prints a string, followed by a new line,
- * @str: pointer to the string to print
- *
- * Return: void
+ * _isdigit - tells if the string consists of digits
+ * @argv: pointer to current item in argument
+ * Return: return 0 if all digits, 1 if not all digits.
  */
-void _puts(char *str)
+int _isdigit(char *argv)
 {
-	int i = 0;
+	int i;
 
-	while (str[i])
+	i = 0;
+	while (argv[i])
 	{
-		_putchar(str[i]);
+		if (argv[i] >= '0' && argv[i] <= '9')
+			i++;
+		else
+			return (1);
+	}
+	return (0);
+}
+/**
+ * _atoi - converts a string of ascii digits to the values they represent
+ * @s: pointer to the source string
+ * Return: value of digits
+ */
+int _atoi(char *s)
+{
+	int i, result;
+
+	i = result = 0;
+	while (s[i])
+	{
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			result *= 10;
+			result += (s[i] - '0');
+		}
 		i++;
 	}
+	return (result);
 }
-
 /**
- * _atoi - convert a string to an integer.
- * @s: char type string
- *
- * Return: integer converted
+ * main - main function call
+ * @argc: argument count
+ * @argv: 2D array of arguments
+ * Return: return 0 on success, 98 on failure
  */
-int _atoi(const char *s)
+int main(int argc, char *argv[])
 {
-	int sign = 1;
-	unsigned long int resp = 0, firstNum, i;
+	int i;
 
-	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
-	{
-		if (s[firstNum] == '-')
-		{
-			sign *= -1;
-		}
-	}
-	for (i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
-	{
-		resp *= 10;
-		resp += (s[i] - 48);
-	}
-	return (sign * resp);
-}
-
-/**
- * print_int - prints an integer.
- * @n: int
- *
- * Return: 0
- */
-
-void print_int(unsigned long int n)
-{
-	unsigned  long int divisor = 1, i, resp;
-
-	for (i = 0; n / divisor > 9; i++, divisor *= 10)
-		;
-
-	for (; divisor >= 1; n %= divisor, divisor /= 10)
-	{
-		resp = n / divisor;
-		_putchar('0' + resp);
-	}
-}
-
-/**
- * main - a main function that takes argument
- * @argc: argument count; contains the number of argument passed in the program
- * @argv: argument vector; one dimensional string array
- *
- * Return: integer
- */
-int main(int argc, char const *argv[])
-{
-	(void)argc;
+	malloc();
 	if (argc != 3)
 	{
-		_puts("Error ");
+		printf("Error\n");
 		exit(98);
 	}
-	print_int(_atoi(argv[1]) * _atoi(argv[2]));
-	_putchar('\n');
+	for (i = 1; i < argc; i++)
+	{
+		if (_isdigit(argv[i]))
+		{
+			printf("Error\n");
+			exit(98);
+		}
+	}
 	return (0);
 }
