@@ -7,7 +7,7 @@
  *   * @name: sdfasdf
  *    * @age:  asdfas
  *     * @owner:  asdf
- *      */
+*/
 
 struct dog
 {
